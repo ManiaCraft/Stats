@@ -1,0 +1,6 @@
+h3. Fork of nidefawl's stats plugin.
+
+* Updated to RB #1000, implement superperms support (bukkit's new build-in permissions)
+
+
+h4. USE AT YOUR OWN RISK, 'cause i'm new at java.
