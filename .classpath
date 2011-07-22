@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Java/Buildpaths/craftbukkit-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="E:/Java/Buildpaths/Permissions.jar"/>
+	<classpathentry kind="lib" path="E:/Java/Buildpaths/Achievements.jar"/>
+	<classpathentry kind="lib" path="E:/Java/Buildpaths/EssentialsGroupManager.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
