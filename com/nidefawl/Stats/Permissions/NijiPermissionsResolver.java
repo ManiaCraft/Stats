@@ -43,7 +43,7 @@ public class NijiPermissionsResolver implements PermissionsResolver {
 	public String getGroup(Player player) {
 		if (!load())
 			return "";
-		return perms.getHandler().getGroup(player.getWorld().getName(), player.getName());
+		return perms.getHandler().getGroup(player.getWorld().getName(), player.getName()); /*deprecated*/
 	}
 
 
@@ -59,7 +59,7 @@ public class NijiPermissionsResolver implements PermissionsResolver {
 	public void reloadPerms() {
 		if (!load())
 			return;
-		perms.setupPermissions();
+		perms.setupPermissions(null);
 	}
 
 }

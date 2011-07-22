@@ -11,3 +11,23 @@ commands:
     played:
         description: Shows your played time
         usage: /<command>
+permissions:
+    stats.*:
+        description: Gives access to all morephysics commands/features.
+        children:
+            stats.log: true
+            stats.view.own: true
+            stats.view.others: true
+            stats.view.playtime: true
+            stats.admin: true
+    stats.log:
+        description: only actions of players that have that permissions will logged
+    stats.view.own:
+        description: allows a player to watch his own stats with the /stats command
+    stats.view.others:
+        description: allows a player to watch other players stats with the /stats <player> command
+    stats.view.playtime:
+        description: allows a player to watch his play-time with the /played command
+    stats.admin:
+        description: grants access to /stats debug + /stats set + /stats list
+        

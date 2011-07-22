@@ -28,7 +28,7 @@ public class StatsSettings {
 	public static boolean logItemUse;
 	public static boolean logBlockIgnite;
 	public static boolean logPlayerAnimations;
-
+	public static boolean useSuperPerms;
 	public static void load(Stats plugin) {
 
 		PropertiesFile properties = new PropertiesFile(new File(plugin.getDataFolder(), "stats.properties"));
@@ -66,6 +66,7 @@ public class StatsSettings {
 		dbUsername = properties.getString("sql-user", "root", "");
 		dbPassword = properties.getString("sql-pass", "root", "");
 		dbTable = properties.getString("sql-table-stats", "stats", "");
+		useSuperPerms = properties.getBoolean("use-super-perms", true, "");
 		properties.save();
 	}
 

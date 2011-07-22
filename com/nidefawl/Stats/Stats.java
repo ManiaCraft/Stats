@@ -26,9 +26,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.nidefawl.Achievements.Achievements;
 import com.nidefawl.Stats.ItemResolver.hModItemResolver;
 import com.nidefawl.Stats.ItemResolver.itemResolver;
-import com.nidefawl.Stats.Permissions.GroupManagerResolver;
 import com.nidefawl.Stats.Permissions.NijiPermissionsResolver;
 import com.nidefawl.Stats.Permissions.PermissionsResolver;
+import com.nidefawl.Stats.Permissions.PermissionsBukkitResolver;
+import com.nidefawl.Stats.Permissions.GroupManagerResolver;
 import com.nidefawl.Stats.Permissions.defaultResolver;
 import com.nidefawl.Stats.datasource.Category;
 import com.nidefawl.Stats.datasource.PlayerStat;
@@ -340,10 +341,16 @@ public class Stats extends JavaPlugin {
 			perms = new NijiPermissionsResolver(this);
 			return;
 		}
-
+		if(StatsSettings.useSuperPerms) {
+			log.info(logprefix + " Using bukkit's SuperPerms!");
+			perms = new PermissionsBukkitResolver();
+			return;
+		}
+		else {
 		log.info(logprefix + " Using bukkit's isOp() for permissions (until other plugin is enabled)");
 		perms = new defaultResolver();
 		return;
+		}
 	}
 
 	public String StatsPlayerList() {
