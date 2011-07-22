@@ -42,7 +42,7 @@ import com.nidefawl.Stats.util.Updater;
 public class Stats extends JavaPlugin {
 
 	public final static Logger log = Logger.getLogger("Minecraft");
-	public final static double version = 0.985;
+	public final static double version = 1.0;
 	public final static String logprefix = "[Stats-" + version + "]";
 	public final static String defaultCategory = "stats";
 	public boolean enabled = false;
