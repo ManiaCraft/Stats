@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="E:/Java/Buildpaths/Permissions.jar"/>
 	<classpathentry kind="lib" path="E:/Java/Buildpaths/Achievements.jar"/>
 	<classpathentry kind="lib" path="E:/Java/Buildpaths/EssentialsGroupManager.jar"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
